@@ -14,7 +14,6 @@ class CalculatorServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->make('QuocDoanh\Calculator\CalculatorController');
-        $this->loadViewsFrom(__DIR__.'/views', 'calculator');
     }
 
     /**
@@ -23,7 +22,8 @@ class CalculatorServiceProvider extends ServiceProvider
      * @return void
      */
     public function boot()
-    {
+    {   
+        $this->loadViewsFrom(__DIR__.'/views', 'calculator');
         include __DIR__.'/routes.php';
     }
 }
