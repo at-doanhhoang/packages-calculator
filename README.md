@@ -8,7 +8,7 @@ Step 1. Install calculator package
     composer require quocdoanh/calculator
 Step 2. Open up the app.php file in the config folder: In app.php, scroll down to providers section and add the Calculator Service Provider by adding: 
 
-    QuocDoanh/Calculator/CalculatorServiceProvider
+    QuocDoanh/Calculator/CalculatorServiceProvider::class
 Step 3. Go to project root of your laravel app and open composer.json file and add namespace in psr-4:
 
     autoload": {
