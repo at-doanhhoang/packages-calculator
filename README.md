@@ -16,4 +16,4 @@ Step 3. Go to project root of your laravel app and open composer.json file and a
     }
 If you want to edit the views, then you can publish the views in the service provider. You can publish the views by the artisan command:
 
-    php artisan vendor:publish --tag=quocdoanh\calculator\CalculatorServiceProvider  
+    "php artisan vendor:publish --tag=quocdoanh\calculator\CalculatorServiceProvider"
