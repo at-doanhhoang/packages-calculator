@@ -24,6 +24,9 @@ class CalculatorServiceProvider extends ServiceProvider
     public function boot()
     {   
         $this->loadViewsFrom(__DIR__.'/views', 'calculator');
-        include __DIR__.'/routes.php';
+        $this->loadRoutesFrom(__DIR__.'/routes.php');
+        $this->publishes([
+            __DIR__.'/views' => base_path('resources/views/quocdoanh/calculator'),
+        ]);
     }
 }
